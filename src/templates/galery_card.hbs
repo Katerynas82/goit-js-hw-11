@@ -1,0 +1,25 @@
+{{#each this}}
+<li class="gallery__item">
+    <img src="{{urls.small}}" alt="{{alt_description}}" width="270" height="405" class="gallery-img">
+</li>
+{{/each}}
+
+<div class="photo-card">
+  <li class="gallery__item">
+    <img src="{{urls.small}}" alt="{{alt_description}}" width="270" height="405" class="gallery-img" loading="lazy"/>
+
+  <div class="info">
+    <p class="info-item">
+      <b>Likes</b>
+    </p>
+    <p class="info-item">
+      <b>Views</b>
+    </p>
+    <p class="info-item">
+      <b>Comments</b>
+    </p>
+    <p class="info-item">
+      <b>Downloads</b>
+    </p>
+  </div>
+</div>

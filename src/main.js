@@ -20,8 +20,8 @@ async function handleSubmitBtn(event) {
         searchGalleryQuery(`${searchWord}`)
             .then((data) => {
                 if (data.total === 0 || searchWord === "") { 
-                    iziToast.warning({
-                        position: 'topRight',
+                    iziToast.error({
+                        position: 'bottomRight',
                         message: "Sorry, there are no images matching your search query. Please try again!",
                     })
                     loader.classList.add('hidden');
